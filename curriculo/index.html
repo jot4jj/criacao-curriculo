@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="curriculo-data">
+            <div>
+                <p id="text-curriculo">Crie seu currículo</p>
+            </div>
+            <div>
+                <input type="date" id="date">
+            </div>
+        </div>
+        <div class="line-global">
+            <div class="line"></div>
+            <div><p>Dados</p></div>
+            <div class="line"></div>
+        </div>
+        
+        <p id="title">Informações da escola</p>
+        <div class="escola">
+
+            <div>
+                <input type="text" placeholder="Nome da escola" id="escola" required>
+            </div>
+
+            <div>
+                <input type="text" placeholder="CPF" id="cpf" oninput="aoInserirCPF(event)" maxlength="14">
+            </div>
+            
+        </div>
+
+        <p id="title">Informações pessoais</p>
+        <div class="pessoais">
+            <input type="text" placeholder="Nome completo" id="nome" required>
+        </div>
+
+        <p id="title">Região</p>
+        <div class="regiao">
+            <div>
+                <input type="text" list="nacionalidade" placeholder="Nacionalidade" id="nac">
+                <datalist id="nacionalidade">
+                    <option value="Brasil">Brasil</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="EUA">EUA</option>
+                    <option value="Alemanha">Alemanha</option>
+                    <option value="França">França</option>
+                    <option value="Japão">Japão</option>
+                </datalist>
+            </div>
+
+            <div>
+                <input type="text" list="estado" placeholder="Estado" id="est">
+                <datalist id="estado">
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Washington, DC">Washington, DC</option>
+                    <option value="Berlim">Berlim</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Tóquio">Tóquio</option>
+                </datalist>
+            </div>
+
+            <div>
+                <input type="text" list="cidade" placeholder="Cidade" id="cid">
+                <datalist id="cidade">
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="La Plata">La Plata</option>
+                    <option value="Washington, DC">Washington, DC</option>
+                    <option value="Berlim">Berlim</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Tóquio">Tóquio</option>
+                </datalist>
+            </div>
+        </div>
+
+        <p id="title">Sexo</p>
+        <div class="sexo">
+            <div class="masc">
+                <input type="radio" name="sexo" id="m">
+                <label for="m">Masculino</label>
+            </div>
+
+            <div class="fem">
+                <input type="radio" name="sexo" id="f">
+                <label for="f">Feminino</label>
+            </div>
+
+            <div class="outro">
+                <input type="radio" name="sexo" id="o">
+                <label for="o">Outro</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Enviar" id="enviar">
+        
+        <table class="tabela">
+            <tr>
+                <th>Nome</th>
+                <td id="nome_result"></td>
+                <th>Nacionalidade</th>
+                <td id="nacionalidade_result"></td>
+            </tr>
+            <tr>
+                <th>Escola</th>
+                <td id="escola_result"></td>
+                <th>Estado</th>
+                <td id="estado_result"></td>
+            </tr>
+            <tr>
+                <th>CPF</th>
+                <td id="cpf_result"></td>
+                <th>Cidade</th>
+                <td id="cidade_result"></td>
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
