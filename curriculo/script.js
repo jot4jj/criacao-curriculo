@@ -32,7 +32,7 @@ function aoInserirCPF(evento) {
 // Eventos do botão Enviar
 
 button.addEventListener('click', () => {
-    if (cpf.value.length == 0 || escola.value.length == 0 || nome.value.length == 0) {
+    if (cpf.value.length == 0 || escola.value.length == 0 || nome.value.length == 0 || nac.value.length == 0 || est.value.length == 0 || cid.value.length == 0) {
         alert('Preencha todos os campos')
     } else {
         nome_result.innerHTML = nome.value;
