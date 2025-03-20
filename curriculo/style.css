@@ -160,7 +160,6 @@ input::placeholder
 
 .tabela
 {
-    border-radius: 10px;
     border-collapse: collapse;
     border: 1px solid black;
     background-color: #f3f3f3;
@@ -182,6 +181,12 @@ input::placeholder
     border-collapse: collapse;
     padding: 5px;
     text-align: left;
+}
+
+#resultado{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
 @media (max-width: 1400px) {
@@ -220,7 +225,7 @@ input::placeholder
     }
 
     #text-curriculo{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
@@ -236,6 +241,14 @@ input::placeholder
     /* Ocultado porque fica inviável no celular */
     .tabela{
         display: none;
+    }
+
+    #resultado{
+        display: none;
+    }
+
+    #text-curriculo{
+        font-size: 15px;
     }
 }
 
